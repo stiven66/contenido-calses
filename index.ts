@@ -65,4 +65,4 @@ type Resultado2 = Evaluar<
   ReglasUsuario
 > // "INVALIDO"
 
-//let resultado1: Resultado1 = "INVALIDO"
+let resultado1: Resultado1 = "INVALIDO"
