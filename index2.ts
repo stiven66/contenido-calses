@@ -4,6 +4,7 @@
 let nombre: string = "Caaaaaaarlllloss"; // Define la cadena a analizar
 let obj: Record<string, number> = {}; // Objeto para guardar la cantidad de repeticiones de cada letra
 
+// Este for es para contar las repeticiones de cada letra
 for (let i = 0; i < nombre.length; i++) { // Recorre cada letra del nombre
     let contador: number = 0; // Inicializa el contador de repeticiones
     for (let j = 0; j < nombre.length; j++) { // Recorre de nuevo cada letra para comparar
@@ -15,7 +16,7 @@ for (let i = 0; i < nombre.length; i++) { // Recorre cada letra del nombre
         obj[nombre[i]] = contador; // Guarda la cantidad de repeticiones de la letra
     }
 }
-
+//este type es para definir la estructura del objeto que guarda las letras repetidas y su cantidad
 type LetraRepetida = { letra: string; cantidad: number };
 
 let repetidas: LetraRepetida[] = []; // Arreglo para letras que se repiten
